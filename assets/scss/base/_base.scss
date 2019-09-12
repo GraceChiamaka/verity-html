@@ -1,0 +1,95 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex: 1 0 auto;
+}
+/*** COLORS ***/
+.c-brand{
+  color: $color-1 !important;
+}
+.c-red{
+  color: $color-2 !important;
+}
+.c-grey{
+  color: #828282;
+}
+.c-blue{
+  color: rgba(8, 88, 125, 0.7);
+}
+.c-black{
+  color: #333;
+}
+.c-brown{
+  color: #4F4F4F;
+}
+.c-dark{
+  color: #212121;
+}
+
+// BACKGROUND COLORS
+.bg-yellow{
+  background: $color-3;
+}
+.bg-grey-light{
+  background: $color-5;
+}
+//Borders
+.bd-left--brand{
+  border-left: 1px solid $color-1;
+}
+.bd-red{
+  border: 1px solid $color-2;
+}
+
+.w-80{
+  width: 80%;
+}
+.border-none{
+  border: 0 !important;
+}
+
+
+/*** SIZING ***/
+//FONT-SIZE
+.f-12{ font-size: 12px; }
+.f-14{ font-size: $size-1; }
+.f-16{ font-size: $size-2; }
+.f-18{ font-size: $size-3; }
+.f-20{ font-size: $size-4; }
+.f-24{ font-size: 24px; }
+.f-52{
+    font-size: $size-x;
+    @include screenSize(ss-phone){
+        font-size: 36px;
+    }
+}
+
+.lh-3{ line-height: $size-lg-2}
+
+.f-quick{ font-family: 'Quicksand', sans-serif; }
+
+.f-bold{ font-weight: 700; }
+.f-med{ font-weight: 500; }
+.f-light{ font-weight: 300; }
+
+//MARGIN
+.mt-6{ margin-top: $size-lg-2; }
+.mt-6e{ margin-top: $size-lg; }
+.mb-6e{ margin-bottom: $size-lg; }
+
+
+footer{
+    flex: none;
+}

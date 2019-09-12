@@ -1,0 +1,17 @@
+// INPUTS
+.v__input{
+  border:none !important;
+  border-bottom: 0.5px solid rgba(79, 79, 79, 0.6) !important;
+  background: #fff !important;
+  border-radius: 0 !important;
+  &:focus{
+      border: none !important;
+      border-bottom: 1px solid $color-1 !important;
+      outline-color: none  !important;
+      box-shadow: none !important;
+  }
+}
+.v__input-textarea{
+  border:0.5px solid rgba(79, 79, 79, 0.6) !important;
+  height: 130px !important;
+}
