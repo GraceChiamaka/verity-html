@@ -88,95 +88,100 @@ main {
 
 /*** SIZING ***/
 /* line 66, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+.f-10 {
+  font-size: 10px;
+}
+
+/* line 67, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-12 {
   font-size: 12px;
 }
 
-/* line 67, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 68, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-14 {
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
 }
 
-/* line 68, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 69, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-16 {
   font-size: 1rem;
 }
 
-/* line 69, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 70, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-18 {
   font-size: 1.125rem;
 }
 
-/* line 70, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 71, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-20 {
   font-size: 1.25rem;
 }
 
-/* line 71, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 72, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-24 {
   font-size: 24px;
 }
 
-/* line 72, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 73, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-52 {
   font-size: 3.25rem;
 }
 
 @media (max-width: 575px) {
-  /* line 72, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+  /* line 73, ../../../Projects/verity-html/assets/scss/base/_base.scss */
   .f-52 {
     font-size: 36px;
   }
 }
 
-/* line 79, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 80, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .lh-3 {
   line-height: 3.875rem;
 }
 
-/* line 81, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 82, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-quick {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* line 83, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 84, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-bold {
   font-weight: 700;
 }
 
-/* line 84, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 85, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-med {
   font-weight: 500;
 }
 
-/* line 85, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 86, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-light {
   font-weight: 300;
 }
 
-/* line 88, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 89, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .mt-6 {
   margin-top: 3.875rem;
 }
 
-/* line 89, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 90, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .mt-6e {
   margin-top: 6.5rem;
 }
 
-/* line 90, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 91, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .mb-6e {
   margin-bottom: 6.5rem;
 }
 
-/* line 93, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 94, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 footer {
   flex: none;
 }
 
 /* line 2, ../../../Projects/verity-html/assets/scss/components/_buttons.scss */
 .btn-brand {
-  height: 40px;
+  height: 44px;
   width: 134px;
   background: linear-gradient(180deg, #D97159 0%, #08587D 100%);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
@@ -223,6 +228,12 @@ footer {
 .v__input-textarea {
   border: 0.5px solid rgba(79, 79, 79, 0.6) !important;
   height: 130px !important;
+}
+
+/* line 18, ../../../Projects/verity-html/assets/scss/components/_inputs.scss */
+.v__textarea-msg {
+  height: 450px !important;
+  border: none !important;
 }
 
 /* line 1, ../../../Projects/verity-html/assets/scss/components/_nav.scss */
@@ -696,6 +707,163 @@ body[data-page="homepage"] {
 /* line 101, ../../../Projects/verity-html/assets/scss/pages/_dashboard.scss */
 .user-section .user-details {
   margin-top: 3rem;
+}
+
+/* line 2, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.nav__bg {
+  width: 100%;
+  height: 350px;
+  background-image: url("../../../assets/images/branch.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 10, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.banner {
+  height: 50px;
+  background: #fff;
+}
+
+/* line 14, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.banner .banner-button button {
+  margin-top: -2px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 10, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+  .banner {
+    height: 65px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 10, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+  .banner {
+    height: 180px;
+  }
+  /* line 23, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+  .banner .banner-button {
+    margin-top: 5em;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 10, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+  .banner {
+    height: 250px;
+  }
+  /* line 29, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+  .banner .banner-button {
+    margin-top: 1em;
+  }
+  /* line 31, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+  .banner .banner-button button {
+    float: unset;
+    display: block;
+    margin: auto;
+  }
+}
+
+/* line 41, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.banner-img img {
+  position: absolute;
+  bottom: -60px;
+}
+
+@media (max-width: 575px) {
+  /* line 41, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+  .banner-img img {
+    bottom: -48px;
+    width: 25%;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 51, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+  .h-140 {
+    height: 140px !important;
+  }
+}
+
+/* line 53, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.border {
+  margin-top: 2em;
+}
+
+/* line 56, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.branch-tabs {
+  display: inline-flex;
+  list-style: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+@media (max-width: 575px) {
+  /* line 56, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+  .branch-tabs {
+    margin-top: 4em;
+  }
+}
+
+/* line 67, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.branch-tabs .branch-item {
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 0.8rem 1rem;
+}
+
+/* line 71, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.branch-tabs .branch-item a {
+  color: rgba(8, 88, 125, 0.7);
+  font-weight: 500;
+}
+
+/* line 75, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.branch-tabs .branch-item:hover {
+  border-bottom: 2px solid #08587d;
+  color: #08587d;
+}
+
+/* line 81, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.branch-item.active {
+  border-bottom: 2px solid #08587d;
+}
+
+/* line 83, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.branch-item.active a {
+  color: #08587d;
+}
+
+/* line 88, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.nav__tabs .nav-tabs {
+  border: none;
+}
+
+/* line 90, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.nav__tabs .nav-tabs .nav-link.active {
+  background: #D97159;
+  border: none;
+  color: #fff;
+}
+
+/* line 95, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.nav__tabs .nav-tabs .nav-link {
+  padding-bottom: 0.8rem !important;
+  margin-bottom: -2px;
+}
+
+/* line 101, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.general-block {
+  width: 100%;
+  height: 150px;
+  background-image: url("../../../assets/images/bg-locate.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=main.css.map */
