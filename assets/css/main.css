@@ -62,119 +62,134 @@ main {
 }
 
 /* line 45, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+.bg-red {
+  background: #D97159;
+}
+
+/* line 48, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .bg-grey-light {
   background: rgba(224, 224, 224, 0.5);
 }
 
-/* line 49, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 53, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .bd-left--brand {
   border-left: 1px solid #08587d;
 }
 
-/* line 52, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 56, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .bd-red {
   border: 1px solid #D97159;
 }
 
-/* line 56, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 59, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+.bd-blue {
+  border: 1px solid rgba(8, 88, 125, 0.7);
+}
+
+/* line 63, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .w-80 {
   width: 80%;
 }
 
-/* line 59, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 66, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .border-none {
   border: 0 !important;
 }
 
 /*** SIZING ***/
-/* line 66, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 73, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-10 {
   font-size: 10px;
 }
 
-/* line 67, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 74, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-12 {
   font-size: 12px;
 }
 
-/* line 68, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 75, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-14 {
   font-size: 0.875rem !important;
 }
 
-/* line 69, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 76, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-16 {
   font-size: 1rem;
 }
 
-/* line 70, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 77, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-18 {
   font-size: 1.125rem;
 }
 
-/* line 71, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 78, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-20 {
   font-size: 1.25rem;
 }
 
-/* line 72, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 79, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-24 {
   font-size: 24px;
 }
 
-/* line 73, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 80, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-52 {
   font-size: 3.25rem;
 }
 
 @media (max-width: 575px) {
-  /* line 73, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+  /* line 80, ../../../Projects/verity-html/assets/scss/base/_base.scss */
   .f-52 {
     font-size: 36px;
   }
 }
 
-/* line 80, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 87, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .lh-3 {
   line-height: 3.875rem;
 }
 
-/* line 82, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 89, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-quick {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* line 84, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 91, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-bold {
   font-weight: 700;
 }
 
-/* line 85, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 92, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-med {
   font-weight: 500;
 }
 
-/* line 86, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 93, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-light {
   font-weight: 300;
 }
 
-/* line 89, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 96, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .mt-6 {
   margin-top: 3.875rem;
 }
 
-/* line 90, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 97, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .mt-6e {
   margin-top: 6.5rem;
 }
 
-/* line 91, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 98, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .mb-6e {
   margin-bottom: 6.5rem;
 }
 
-/* line 94, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 100, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+.pos-rel {
+  position: relative;
+}
+
+/* line 104, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 footer {
   flex: none;
 }
@@ -198,7 +213,12 @@ footer {
   box-shadow: inset 2px -2px 13px -1px #d97159;
 }
 
-/* line 16, ../../../Projects/verity-html/assets/scss/components/_buttons.scss */
+/* line 15, ../../../Projects/verity-html/assets/scss/components/_buttons.scss */
+.btn-brand-lg {
+  width: 160px;
+}
+
+/* line 18, ../../../Projects/verity-html/assets/scss/components/_buttons.scss */
 .signUp-btn {
   padding: 10px 3rem;
   background: linear-gradient(180deg, #D97159 0%, #08587D 100%);
@@ -845,9 +865,9 @@ body[data-page="homepage"] {
 
 /* line 90, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
 .nav__tabs .nav-tabs .nav-link.active {
-  background: #D97159;
+  background: #D97159 !important;
   border: none;
-  color: #fff;
+  color: #fff !important;
 }
 
 /* line 95, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
@@ -864,6 +884,42 @@ body[data-page="homepage"] {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* line 109, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.h-100 {
+  height: 100px;
+}
+
+/* line 110, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.group__hidden {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  left: 10px;
+  bottom: 0;
+  visibility: hidden;
+}
+
+/* line 120, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.upload_group_image {
+  width: 110px;
+  height: 110px;
+  border: 1px solid rgba(130, 130, 130, 0.5);
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  left: 10px;
+  bottom: 0;
+}
+
+/* line 133, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
+.pointer {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

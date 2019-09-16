@@ -42,15 +42,22 @@ main{
 .bg-yellow{
   background: $color-3;
 }
+.bg-red{
+  background: $color-2;
+}
 .bg-grey-light{
   background: $color-5;
 }
+
 //Borders
 .bd-left--brand{
   border-left: 1px solid $color-1;
 }
 .bd-red{
   border: 1px solid $color-2;
+}
+.bd-blue{
+  border: 1px solid  rgba(8, 88, 125, 0.7);
 }
 
 .w-80{
@@ -90,6 +97,9 @@ main{
 .mt-6e{ margin-top: $size-lg; }
 .mb-6e{ margin-bottom: $size-lg; }
 
+.pos-rel{
+  position: relative;
+}
 
 footer{
     flex: none;

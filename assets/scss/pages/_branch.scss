@@ -88,9 +88,9 @@
   .nav-tabs{
     border: none;
     .nav-link.active{
-      background: $color-2;
+      background: $color-2 !important;
       border:none;
-      color: #fff;
+      color: #fff !important;
     }
     .nav-link{
       padding-bottom: 0.8rem !important;
@@ -105,4 +105,31 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.h-100{ height: 100px; }
+.group__hidden{
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: -2rem;
+  right:0;
+  left: 10px;
+  bottom: 0;
+  visibility: hidden;
+}
+.upload_group_image{
+  width: 110px;
+  height: 110px;
+  border:1px solid rgba(130, 130, 130, 0.5);
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: -2rem;
+  right:0;
+  left: 10px;
+  bottom: 0;
+
+}
+.pointer{
+  cursor: pointer;
 }
