@@ -19,3 +19,12 @@
   height: 450px !important;
   border:none !important;
 }
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: none ;
+    border-bottom:  0.5px solid rgba(79, 79, 79, 0.6) !important;
+    border-radius: 4px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+  text-align: left;
+}

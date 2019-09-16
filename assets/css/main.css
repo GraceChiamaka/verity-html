@@ -256,6 +256,19 @@ footer {
   border: none !important;
 }
 
+/* line 22, ../../../Projects/verity-html/assets/scss/components/_inputs.scss */
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: none;
+  border-bottom: 0.5px solid rgba(79, 79, 79, 0.6) !important;
+  border-radius: 4px;
+}
+
+/* line 28, ../../../Projects/verity-html/assets/scss/components/_inputs.scss */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  text-align: left;
+}
+
 /* line 1, ../../../Projects/verity-html/assets/scss/components/_nav.scss */
 .v__nav {
   background: #fff;
