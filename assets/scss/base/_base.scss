@@ -77,6 +77,7 @@ main{
 .f-18{ font-size: $size-3; }
 .f-20{ font-size: $size-4; }
 .f-24{ font-size: 24px; }
+.f-40{ font-size: 40px; }
 .f-52{
     font-size: $size-x;
     @include screenSize(ss-phone){
@@ -96,6 +97,16 @@ main{
 .mt-6{ margin-top: $size-lg-2; }
 .mt-6e{ margin-top: $size-lg; }
 .mb-6e{ margin-bottom: $size-lg; }
+.mt-7{
+  margin-top: 8rem;
+}
+.pt-6e{ padding-top: $size-x; }
+.px-sm-3{
+  @include screenSize(ss-phone){
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 
 .pos-rel{
   position: relative;

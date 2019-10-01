@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
 /* line 2, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 * {
   margin: 0;
@@ -133,63 +134,86 @@ main {
 }
 
 /* line 80, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+.f-40 {
+  font-size: 40px;
+}
+
+/* line 81, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-52 {
   font-size: 3.25rem;
 }
 
 @media (max-width: 575px) {
-  /* line 80, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+  /* line 81, ../../../Projects/verity-html/assets/scss/base/_base.scss */
   .f-52 {
     font-size: 36px;
   }
 }
 
-/* line 87, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 88, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .lh-3 {
   line-height: 3.875rem;
 }
 
-/* line 89, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 90, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-quick {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* line 91, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 92, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-bold {
   font-weight: 700;
 }
 
-/* line 92, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 93, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-med {
   font-weight: 500;
 }
 
-/* line 93, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 94, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .f-light {
   font-weight: 300;
 }
 
-/* line 96, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 97, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .mt-6 {
   margin-top: 3.875rem;
 }
 
-/* line 97, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 98, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .mt-6e {
   margin-top: 6.5rem;
 }
 
-/* line 98, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 99, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .mb-6e {
   margin-bottom: 6.5rem;
 }
 
 /* line 100, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+.mt-7 {
+  margin-top: 8rem;
+}
+
+/* line 103, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+.pt-6e {
+  padding-top: 3.25rem;
+}
+
+@media (max-width: 575px) {
+  /* line 104, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+  .px-sm-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* line 111, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 .pos-rel {
   position: relative;
 }
 
-/* line 104, ../../../Projects/verity-html/assets/scss/base/_base.scss */
+/* line 115, ../../../Projects/verity-html/assets/scss/base/_base.scss */
 footer {
   flex: none;
 }
@@ -489,7 +513,7 @@ footer.footer p a:hover {
   }
 }
 
-/* line 1, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+/* line 4, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
 body[data-page="homepage"] {
   background-image: url("../../assets/images/Vector.png");
   background-repeat: no-repeat;
@@ -498,29 +522,98 @@ body[data-page="homepage"] {
   height: 100%;
 }
 
+/* line 18, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+.body-bg {
+  background-image: url("../../assets/images/Vector.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin-top: -10rem;
+  padding-top: 5rem;
+}
+
 @media (max-width: 575px) {
-  /* line 11, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+  /* line 18, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+  .body-bg {
+    margin-top: -25rem;
+    padding-top: 20rem;
+    height: 750px;
+  }
+}
+
+/* line 32, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 40, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+ol li {
+  counter-increment: my-awesome-counter;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+
+/* line 47, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+ol li::before {
+  content: "0" counter(my-awesome-counter);
+  font-weight: bold;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  font-family: 'Abril Fatface', serif;
+  line-height: 1;
+}
+
+/* line 55, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+.f-abril {
+  font-family: 'Abril Fatface', serif;
+}
+
+/* line 58, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+.bg-white-light {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* line 62, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+.features h1 {
+  margin-bottom: 20px;
+}
+
+/* line 64, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+.features h1 span {
+  font-size: 36px;
+}
+
+@media (max-width: 575px) {
+  /* line 71, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
   .info img.w-50 {
     width: 100% !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 11, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+  /* line 71, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
   .info img.w-50 {
     width: 75% !important;
   }
 }
 
 @media (max-width: 575px) {
-  /* line 20, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+  /* line 80, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
   .intro {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
-/* line 26, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+/* line 86, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
 .square-container {
   width: 210px;
   height: 210px;
@@ -531,7 +624,7 @@ body[data-page="homepage"] {
   margin-bottom: 2rem;
 }
 
-/* line 34, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+/* line 94, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
 .square-container .square {
   width: 168px;
   height: 168px;
@@ -548,12 +641,12 @@ body[data-page="homepage"] {
   cursor: pointer;
 }
 
-/* line 48, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+/* line 108, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
 .square-container .square:hover {
   background-color: #D97159;
 }
 
-/* line 51, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+/* line 111, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
 .square-container .square span {
   transform: rotate(-45deg);
   height: 50px;
@@ -562,24 +655,24 @@ body[data-page="homepage"] {
   justify-content: center;
 }
 
-/* line 60, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+/* line 120, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
 .modal {
   background: rgba(8, 88, 125, 0.9);
 }
 
-/* line 63, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+/* line 123, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
 .mb-5e {
   margin-bottom: 5rem !important;
 }
 
 @media (max-width: 575px) {
-  /* line 65, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+  /* line 125, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
   .square-container {
     width: 180px;
     height: 180px;
     margin-right: 1.5rem;
   }
-  /* line 69, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
+  /* line 129, ../../../Projects/verity-html/assets/scss/pages/_homepage.scss */
   .square-container .square {
     width: 140px;
     height: 140px;
@@ -933,6 +1026,134 @@ body[data-page="homepage"] {
 /* line 133, ../../../Projects/verity-html/assets/scss/pages/_branch.scss */
 .pointer {
   cursor: pointer;
+}
+
+/* line 1, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.church_bg {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../../assets/images/family.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* line 10, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.blue-overlay {
+  background: rgba(8, 88, 125, 0.6);
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 21, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.bg_1, .bg_2, .bg_3, .bg_4 {
+  width: 100%;
+  height: 200px;
+  background-image: url("../../../assets/images/square_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* line 30, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.overlay-sm {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 39, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.dark-overlay {
+  background: rgba(41, 58, 89, 0.75);
+}
+
+/* line 42, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.green-overlay {
+  background: rgba(111, 207, 151, 0.75);
+}
+
+/* line 45, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.dark__overlay-light {
+  background: rgba(130, 130, 130, 0.75);
+}
+
+/* line 48, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.blue__overlay-light {
+  background: rgba(45, 156, 219, 0.75);
+}
+
+/* line 51, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.short-hr {
+  background: #fff;
+  border: 2px solid #fff;
+  margin-top: 0;
+  display: inline-block;
+  width: 50px;
+}
+
+/* line 58, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.denomination__tab {
+  border-bottom: none;
+}
+
+/* line 61, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.denomination__tab .nav-link {
+  border: none !important;
+}
+
+/* line 65, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.denomination__tab .nav-link.active .nav__link-active {
+  border: 1px solid #D97159;
+  display: block;
+  width: 80px;
+  margin: auto;
+  border-radius: 4px;
+}
+
+/* line 75, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.pagination .page-item {
+  border: 1px solid rgba(39, 182, 186, 0.6);
+}
+
+/* line 78, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.pagination .page-item.active {
+  background: #D97159 !important;
+  color: #fff;
+}
+
+/* line 82, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.pagination .page-item.active .page-link {
+  background-color: #D97159 !important;
+  box-shadow: none !important;
+}
+
+/* line 87, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.topic__bg {
+  width: 100%;
+  height: 350px;
+  background-image: url("../../../assets/images/family_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: ce;
+}
+
+/* line 95, ../../../Projects/verity-html/assets/scss/pages/_denomination.scss */
+.upload__files-input {
+  width: 100%;
+  height: 160px;
+  border: 2px dashed rgba(130, 130, 130, 0.5);
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=main.css.map */

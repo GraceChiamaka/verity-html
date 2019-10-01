@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Verity</title>
+
+        <!-- Bootstrap CSS -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body data-page="dashboard" class="bg-grey-light">
+        <header class="dashboard__header">
+            <nav class="navbar navbar-expand-lg bg-white">
+              <div class="container">
+                <button class="navbar-toggler bd-brand" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                              <i class="fas fa-home f-24 mr-1 c-blue"></i>
+                              <span class="c-blue f-bold f-14">HOME</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-4 mx-md-0" href="signup.html">
+                              <i class="fas fa-bell f-24 c-blue mr-1"></i>
+                              <span class="c-blue font-weight-bold f-14">NOTIFICATIONS</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">
+                              <i class="fas fa-envelope f-24 c-blue mr-1"></i>
+                              <span class="c-blue font-weight-bold f-14">MESSAGES</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="m-auto">
+                      <a class="navbar-brand" href="index.html">
+                          <img src="./assets/images/s4.png" alt="logo">
+                      </a>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                      <form class="form-inline my-2 my-lg-0 mr-2">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control navbar__input" aria-label="Search verity" placeholder="Search verity">
+                          <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                          </div>
+                        </div>
+                      </form>
+                      <li class="nav-item dropdown">
+                        <a href="" class="nav-link dashboard-nav--dropdown  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="./assets/images/user.png" class="user-img img-fluid" alt="user" />
+                          <span class="blue-dot"></span>
+                        </a>
+
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                        <!-- Basic dropdown -->
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+        </header>
+        <main class=" mb-6e">
+            <div class="floating__nav mt-4">
+              <div class="container mb-5">
+                <div class="v__nav">
+                  <ol class=' bg-white f-14 f-bold list-unstyled mt-3'>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item ">Believer's Fellowship / Network</a></li>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item ">Church Organization Platform</a></li>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item active">Biblical Search / Devotional</a></li>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item">Online Store</a></li>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item">Directry/Event Locator</a></li>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item">Welfare</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- second nav -->
+            <div class="container">
+              <section class="nav bg-white  p-3">
+                <div class="container-fluid">
+                  <div class="row justify-content-between">
+                    <div class="col-md-4">
+                      <input type="search" class="form-control bg-grey-light" placeholder="Search by topic or title">
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                      <ul class="nav nav-tabs denomination__tab nav-fill bg-white " >
+                        <li class="nav-item mb-0" >
+                          <a class="nav-link active" role="tablist"  id="biblesearch-tab" data-toggle="tab" href="#biblesearch"
+                            role="tab" aria-controls="biblesearch" aria-selected="true">Biblical Search
+                            <span class="nav__link-active"></span>
+                          </a>
+                        </li>
+                        <li class="nav-item mb-0">
+                          <a class="nav-link"  role="tablist"  id="devotional-tab" data-toggle="tab" href="#devotional"
+                            role="tab" aria-controls="devotional" aria-selected="true">Devotional
+                            <span class="nav__link-active"></span>
+                          </a>
+                        </li>
+
+                      </ul>
+                    </div>
+                    <div class="col-md-2">
+                      <button class="btn btn-brand text-white btn-brand-lg" data-toggle="modal" data-target="#addContentModal">Add Content</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="content">
+                <div class="tab-content" id="myTabContent">
+                  <!-- biblical search tab content -->
+                  <div class="tab-pane fade show active"  id="biblesearch" role="tabpanel" aria-labelledby="biblesearch-tab">
+                    <section class="church_bg">
+                      <div class="blue-overlay">
+                        <div class="container">
+                          <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                              <h3 class="f-40 text-white f-bold mt-6e">7 Ways God Uses Fasting and Prayer to Prepare Your Family</h3>
+                              <button class="btn btn-md bg-red text-white mt-3">Continue Reading</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="row mx-0">
+                        <div class="col-md-3 px-0">
+                          <div class="bg_1">
+                            <div class="overlay-sm blue__overlay-light px-3 py-2 text-white">
+                              <div class="number-badge">
+                                <p class="f-bold text-white f-40 mb-0">01</p>
+                                <hr class="short-hr">
+                                <h4 class="f-24 f-bold text-white">Faith</h4>
+                                <p>
+                                  7 Ways God Uses Fasting and Prayer to Prepare Your Family
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 px-0">
+                          <div class="bg_2">
+                            <div class="overlay-sm dark-overlay text-white px-3 py-2">
+                              <div class="number-badge">
+                                <p class="f-bold text-white f-40 mb-0">02</p>
+                                <hr class="short-hr">
+                                <h4 class="f-24 f-bold text-white">Salvation</h4>
+                                <p>
+                                  7 Ways God Uses Fasting and Prayer to Prepare Your Family
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 px-0">
+                          <div class="bg_3">
+                            <div class="overlay-sm green-overlay text-white px-3 py-3">
+                              <div class="number-badge">
+                                <p class="f-bold text-white f-40 mb-0">02</p>
+                                <hr class="short-hr">
+                                <h4 class="f-24 f-bold text-white">Prayer</h4>
+                                <p>
+                                  7 Ways God Uses Fasting and Prayer to Prepare Your Family
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 px-0">
+                          <div class="bg_4">
+                            <div class="overlay-sm dark__overlay-light px-3 py-2 text-white">
+                              <div class="number-badge">
+                                <p class="f-bold text-white f-40 mb-0">02</p>
+                                <hr class="short-hr">
+                                <h4 class="f-24 f-bold text-white">Healing</h4>
+                                <p>
+                                  7 Ways God Uses Fasting and Prayer to Prepare Your Family
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </section>
+                    <section class="bg-white p-5">
+                      <a href="bible_search_topic.html" class="dis-block">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img src="assets/images/family_2.png" class="w-100" alt="">
+                          </div>
+                          <div class="col-md-8">
+                            <h4 class="c-brand f-med f-20">Prayer</h4>
+                            <h5 class="f-bold f-18 c-dark"> 7 Ways God Uses Fasting and Prayer to Prepare Your Family</h5>
+                            <p class="c-brown f-med f-14">
+                              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                              Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced...
+                            </p>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <p class=" c-brand f-14 f-med">David Adebayo</p>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="c-brown f-med f-14">June 18. <span class="ml-3">4 min read</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="row mt-5">
+                        <div class="col-md-4">
+                          <img src="assets/images/family_2.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-md-8">
+                          <h4 class="c-brand f-med f-20">Prayer</h4>
+                          <h5 class="f-bold f-18 c-dark"> 7 Ways God Uses Fasting and Prayer to Prepare Your Family</h5>
+                          <p class="c-brown f-med f-14">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                            Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced...
+                          </p>
+                          <div class="row">
+                            <div class="col-md-3">
+                              <p class=" c-brand f-14 f-med">David Adebayo</p>
+                            </div>
+
+                            <div class="col-md-3">
+                              <p class="c-brown f-med f-14">June 18. <span class="ml-3">4 min read</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-5">
+                        <div class="col-md-4">
+                          <img src="assets/images/family_2.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-md-8">
+                          <h4 class="c-brand f-med f-20">Prayer</h4>
+                          <h5 class="f-bold f-18 c-dark"> 7 Ways God Uses Fasting and Prayer to Prepare Your Family</h5>
+                          <p class="c-brown f-med f-14">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                            Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced...
+                          </p>
+                          <div class="row">
+                            <div class="col-md-3">
+                              <p class=" c-brand f-14 f-med">David Adebayo</p>
+                            </div>
+
+                            <div class="col-md-3">
+                              <p class="c-brown f-med f-14">June 18. <span class="ml-3">4 min read</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-5">
+                        <div class="col-md-4">
+                          <img src="assets/images/family_2.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-md-8">
+                          <h4 class="c-brand f-med f-20">Prayer</h4>
+                          <h5 class="f-bold f-18 c-dark"> 7 Ways God Uses Fasting and Prayer to Prepare Your Family</h5>
+                          <p class="c-brown f-med f-14">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                            Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced...
+                          </p>
+                          <div class="row">
+                            <div class="col-md-3">
+                              <p class=" c-brand f-14 f-med">David Adebayo</p>
+                            </div>
+
+                            <div class="col-md-3">
+                              <p class="c-brown f-med f-14">June 18. <span class="ml-3">4 min read</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row mt-5 justify-content-center">
+                        <div class="col-md-3 text-center">
+                          <nav aria-label="Page navigation example">
+                            <ul class="pagination pg-blue">
+                              <li class="page-item">
+                                <a class="page-link" aria-label="Previous">
+                                  <span>Previous</span>
+                                </a>
+                              </li>
+                              <li class="page-item active"><a class="page-link">1</a></li>
+                              <li class="page-item"><a class="page-link">2</a></li>
+                              <li class="page-item"><a class="page-link">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" aria-label="Next">
+                                  <span aria-hidden="true">Next</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <!-- devotional tab content -->
+                  <div class="tab-pane fade show" id="devotional"  role="tabpanel" aria-labelledby="devotional-tab">
+                    <section class="bg-white p-5 text-center">
+
+                      <h3 class="c-brand f-40 f-med mt-6e mb-6e">DEVOTIONAL COMING SOON!</h3>
+                    </section>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+        </main>
+
+
+        <!-- create group modal -->
+        <div class="modal fade" id="addContentModal" tabindex="-1" role="dialog" aria-labelledby="addContentModal"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content rounded">
+              <div class="modal-header bg-grey-light">
+                <h4 class="modal-title f-bold pl-2" id="addContentTitle">
+                  Add Content
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="form-group">
+                    <label for="title" class="f-bold">Content Title</label>
+                    <input type="text" id="title" name="title" class="form-control" placeholder="Enter content title" required>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="topic" class="f-bold">Select Topic</label>
+                    <select name="topic" id="" class="form-control">
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="files-upload" class="f-bold c-brand upload"></label>
+                    <input type="text" id="files-upload" name="files-upload" class="form-control upload__files-input" required>
+                  </div>
+                  <div class="form-group row mt-4">
+                    <div class="col-md-8">
+                      <label for="" class="f-bold">Select Privacy</label>
+                      <!-- Default unchecked -->
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="privacy" name="privacy">
+                        <label class="custom-control-label" for="privacy">Secret
+                          <span class="c-grey"> ( Enter group description, Rules and Regulations... )</span>
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="privacy" name="privacy">
+                        <label class="custom-control-label" for="privacy">Private
+                          <span class="c-grey">( Enter group description, Rules and Regulations... ) </span>
+                        </label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="privacy" name="privacy" checked>
+                        <label class="custom-control-label" for="privacy">Public
+                          <span class="c-grey">( Enter group description, Rules and Regulations... ) </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <label for="" class="f-bold mb-5">Upload Image</label>
+                      <div class="pos-rel">
+                        <label for="group-image" class="upload_group_image py-3">
+                          <img src="assets/images/camera.png" alt="">
+                        </label>
+                        <input type="file" id="group-image" name="group-image" class="group__hidden">
+                      </div>
+
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer text-right bg-grey-light">
+                  <button class="btn btn-brand text-white btn-md">Create</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+    </body>
+</html>

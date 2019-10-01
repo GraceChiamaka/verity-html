@@ -1,3 +1,6 @@
+// homepage stylesheet
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
 body[data-page="homepage"]{
   background-image: url('../../assets/images/Vector.png');
   background-repeat: no-repeat;
@@ -5,7 +8,64 @@ body[data-page="homepage"]{
   width: 100%;
   height: 100%;
 }
-
+// body[data-page="first-page"]{
+//   background-image: url('../../assets/images/Vector.png');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   width: 100%;
+//   height: 100%;
+// }
+.body-bg{
+  background-image: url('../../assets/images/Vector.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin-top: -10rem;
+  padding-top: 5rem;
+  @include screenSize(ss-phone){
+    margin-top:-25rem;
+    padding-top: 20rem;
+    height: 750px;
+  }
+}
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+  display: flex;
+  width: 100%;
+  font-size:20px;
+  margin-bottom: 1.5rem;
+}
+ol li::before {
+  content: "0" counter(my-awesome-counter);
+  font-weight: bold;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  font-family: 'Abril Fatface', serif;
+  line-height: 1;
+}
+.f-abril{
+  font-family: 'Abril Fatface', serif;
+}
+.bg-white-light{
+  background: rgba(255, 255, 255, 0.9);
+}
+.features{
+  h1{
+    margin-bottom: 20px;
+    span{
+      font-size: 36px;
+    }
+  }
+}
 
 .info{
     img.w-50{

@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Verity</title>
+
+        <!-- Bootstrap CSS -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body data-page="dashboard" class="bg-grey-light">
+        <header class="dashboard__header">
+            <nav class="navbar navbar-expand-lg bg-white">
+              <div class="container">
+                <button class="navbar-toggler bd-brand" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                              <i class="fas fa-home f-24 mr-1 c-blue"></i>
+                              <span class="c-blue f-bold f-14">HOME</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-4 mx-md-0" href="signup.html">
+                              <i class="fas fa-bell f-24 c-blue mr-1"></i>
+                              <span class="c-blue font-weight-bold f-14">NOTIFICATIONS</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">
+                              <i class="fas fa-envelope f-24 c-blue mr-1"></i>
+                              <span class="c-blue font-weight-bold f-14">MESSAGES</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="m-auto">
+                      <a class="navbar-brand" href="index.html">
+                          <img src="./assets/images/s4.png" alt="logo">
+                      </a>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                      <form class="form-inline my-2 my-lg-0 mr-2">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control navbar__input" aria-label="Search verity" placeholder="Search verity">
+                          <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                          </div>
+                        </div>
+                      </form>
+                      <li class="nav-item dropdown">
+                        <a href="" class="nav-link dashboard-nav--dropdown  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="./assets/images/user.png" class="user-img img-fluid" alt="user" />
+                          <span class="blue-dot"></span>
+                        </a>
+
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                        <!-- Basic dropdown -->
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+        </header>
+        <main class=" mb-6e">
+            <div class="floating__nav mt-4">
+              <div class="container mb-5">
+                <div class="v__nav">
+                  <ol class=' bg-white f-14 f-bold list-unstyled mt-3'>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item ">Believer's Fellowship / Network</a></li>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item ">Church Organization Platform</a></li>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item active">Biblical Search / Devotional</a></li>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item">Online Store</a></li>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item">Directry/Event Locator</a></li>
+                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item">Welfare</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- second nav -->
+            <div class="container">
+              <section class="nav bg-white  p-3">
+                <div class="container-fluid">
+                  <div class="row justify-content-between">
+                    <div class="col-md-4">
+                      <input type="search" class="form-control bg-grey-light" placeholder="Search by topic or title">
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                      <ul class="nav nav-tabs denomination__tab nav-fill bg-white " >
+                        <li class="nav-item mb-0" >
+                          <a class="nav-link active" role="tablist"  id="biblesearch-tab" data-toggle="tab" href="#biblesearch"
+                            role="tab" aria-controls="biblesearch" aria-selected="true">Biblical Search
+                            <span class="nav__link-active"></span>
+                          </a>
+                        </li>
+                        <li class="nav-item mb-0">
+                          <a class="nav-link"  role="tablist"  id="devotional-tab" data-toggle="tab" href="#devotional"
+                            role="tab" aria-controls="devotional" aria-selected="true">Devotional
+                            <span class="nav__link-active"></span>
+                          </a>
+                        </li>
+
+                      </ul>
+                    </div>
+                    <div class="col-md-2">
+                      <button class="btn btn-brand text-white btn-brand-lg">Add Content</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="content">
+                <div class="tab-content" id="myTabContent">
+                  <!-- biblical search tab content -->
+                  <div class="tab-pane fade show active"  id="biblesearch" role="tabpanel" aria-labelledby="biblesearch-tab">
+                    <section class="bg-white p-5">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="topic__bg"></div>
+                        </div>
+                        <div class="col-md-6 py-5">
+                          <h4 class="c-brand f-med f-20">Prayer</h4>
+                          <h5 class="f-bold f-40 c-dark mt-3 mb-2"> 7 Ways God Uses Fasting and Prayer to Prepare Your Family</h5>
+                          <div class="row">
+                            <div class="col-md-3">
+                              <p class="c-brand f-14 f-med">David Adebayo</p>
+                            </div>
+                            <div class="col-md-4">
+                              <p class="c-brown f-med f-14">June 18. <span class="ml-3">4 min read</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-center mt-5">
+                        <div class="col-md-8">
+                          <p class="f-16 f-med">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text.
+                            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                            consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+                            discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+                            (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                            very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                            comes from a line in section 1.10.32.
+                          </p>
+                          <p class="f-16 f-med">
+                            The standard chunk of Lorem Ipsum used since the 1500s is
+                            reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
+                            Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914
+                            translation by H. Rackham.
+                          </p>
+                          <section class="section-1 mt-5">
+                            <h3 class="f-bold f-24 mb-3">1. A praying family stays together </h3>
+                            <p class="f-16 f-med">
+                              Contrary to popular belief, Lorem Ipsum is not simply random text.
+                              It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                              Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                              consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+                              discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+                              (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                              very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                              comes from a line in section 1.10.32.
+                            </p>
+                            <p class="f-16 f-med">
+                              The standard chunk of Lorem Ipsum used since the 1500s is
+                              reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
+                              Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914
+                              translation by H. Rackham.
+                            </p>
+                          </section>
+                          <section class="section-1 mt-5">
+                            <h3 class="f-bold f-24 mb-3">2. A praying family stays together </h3>
+                            <p class="f-16 f-med">
+                              Contrary to popular belief, Lorem Ipsum is not simply random text.
+                              It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                              Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                              consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+                              discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+                              (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                              very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                              comes from a line in section 1.10.32.
+                            </p>
+                            <p class="f-16 f-med">
+                              The standard chunk of Lorem Ipsum used since the 1500s is
+                              reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
+                              Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914
+                              translation by H. Rackham.
+                            </p>
+                          </section>
+                          <section class="section-1 mt-5">
+                            <h3 class="f-bold f-24 mb-3">3. A praying family stays together </h3>
+                            <p class="f-16 f-med">
+                              Contrary to popular belief, Lorem Ipsum is not simply random text.
+                              It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                              Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                              consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+                              discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+                              (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                              very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                              comes from a line in section 1.10.32.
+                            </p>
+                            <p class="f-16 f-med">
+                              The standard chunk of Lorem Ipsum used since the 1500s is
+                              reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
+                              Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914
+                              translation by H. Rackham.
+                            </p>
+                          </section>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <!-- devotional tab content -->
+                  <div class="tab-pane fade show" id="devotional"  role="tabpanel" aria-labelledby="devotional-tab">
+                    <section class="bg-white p-5 text-center">
+
+                      <h3 class="c-brand f-40 f-med mt-6e mb-6e">DEVOTIONAL COMING SOON!</h3>
+                    </section>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!-- modals -->
+            
+        </main>
+
+
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+    </body>
+</html>
