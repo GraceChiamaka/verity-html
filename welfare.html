@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Verity</title>
+
+        <!-- Bootstrap CSS -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body data-page="dashboard" class="bg-grey-light">
+        <header class="dashboard__header">
+            <nav class="navbar navbar-expand-lg bg-white">
+              <div class="container">
+                <button class="navbar-toggler bd-brand" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                              <i class="fas fa-home f-24 mr-1 c-blue"></i>
+                              <span class="c-blue f-bold f-14">HOME</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-4 mx-md-0" href="signup.html">
+                              <i class="fas fa-bell f-24 c-blue mr-1"></i>
+                              <span class="c-blue font-weight-bold f-14">NOTIFICATIONS</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">
+                              <i class="fas fa-envelope f-24 c-blue mr-1"></i>
+                              <span class="c-blue font-weight-bold f-14">MESSAGES</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="m-auto">
+                      <a class="navbar-brand" href="index.html">
+                          <img src="./assets/images/s4.png" alt="logo">
+                      </a>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                      <form class="form-inline my-2 my-lg-0 mr-2">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control navbar__input" aria-label="Search verity" placeholder="Search verity">
+                          <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                          </div>
+                        </div>
+                      </form>
+                      <li class="nav-item dropdown">
+                        <a href="" class="nav-link dashboard-nav--dropdown  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="./assets/images/user.png" class="user-img img-fluid" alt="user" />
+                          <span class="blue-dot"></span>
+                        </a>
+
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                        <!-- Basic dropdown -->
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+        </header>
+        <main class=" mb-6e">
+            <div class="floating__nav mt-4">
+              <div class="container mb-5">
+                <div class="v__nav">
+                  <ol class=' bg-white f-14 f-bold list-unstyled mt-3'>
+                      <li class="v__nav-list"><a href="Network.html" class="f-bold v__nav-item">Believer's Fellowship / Network</a></li>
+                      <li class="v__nav-list"><a href="group.html" class="f-bold v__nav-item ">Church Organization Platform</a></li>
+                      <li class="v__nav-list"><a href="denomination.html" class="f-bold v__nav-item">Biblical Search / Devotional</a></li>
+                      <li class="v__nav-list"><a href="" class="f-bold v__nav-item">Online Store</a></li>
+                      <li class="v__nav-list"><a href="" class="f-bold v__nav-item">Directry/Event Locator</a></li>
+                      <li class="v__nav-list"><a href="welfare.html" class="f-bold v__nav-item active">Welfare</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          <!-- BANNER -->
+          <div class="nav__tabs">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-8">
+                        <ul class="nav nav-tabs nav-fill bg-white" >
+                          <li class="nav-item mb-0" >
+                            <a class="nav-link active" role="tablist"  id="general-tab" data-toggle="tab" href="#general"
+                              role="tab" aria-controls="general" aria-selected="true">General</a>
+                          </li>
+                          <li class="nav-item mb-0">
+                            <a class="nav-link"  role="tablist"  id="denomination-tab" data-toggle="tab" href="#denomination"
+                              role="tab" aria-controls="denomination" aria-selected="true">Denomination</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container mt-3">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                <div class="row justify-content-center">
+                  <div class="col-md-12">
+                    <section class="welfare-bg px-4">
+                      <div class="row justify-content-end">
+                        <div class="col-md-5 mt-6">
+                          <div class="banner-text text-white">
+                            <h1 class="f-40 f-bold"> We Rise By Lending a Hand To Others</h1>
+                            <p class="f-16 f-med">
+                              Helping other people can be a cure, not just for those who are in need, but for your soul as well.
+                            </p>
+
+                            <button class="btn bg-red text-white f-bold mt-3" data-toggle="modal" data-target="#donateModal">Make A Donation</button>
+                            <button class="btn f-bold c-red bd-red mt-3" data-toggle="modal" data-target="#helpModal">Ask for help</button>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="donate mt-6e">
+                      <div class="donate-heading text-center">
+                        <h3 class="f-bold f-32 c-brown">Donate By Category </h3>
+                        <p class="f-14 f-med c-grey">Helping other people can be a cure, not just for those who are in need, <br> but for your soul as well.</p>
+                        <form action="" class="row justify-content-center">
+                          <input type="text" class="col-md-5 mt-2 form-control" placeholder="Search by category or keyword..." required>
+                          <button class="col-md-2 btn bg-red text-white f-bold">Search</button>
+                        </form>
+                      </div>
+                    </section>
+                  </div>
+                  <section class="donate-category row pt-5">
+                    <div class="col-md-3">
+                      <a href="donate_category.html" class="dis-block">
+                        <div class="card">
+                          <img src="assets/images/category.png" alt="">
+                          <div class="card-footer bg-transparent">
+                            <p class="text-center c-brown f-16 f-bold">Education</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="assets/images/category.png" alt="">
+                        <div class="card-footer bg-transparent">
+                          <p class="text-center c-brown f-16 f-bold">Education</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="assets/images/category.png" alt="">
+                        <div class="card-footer bg-transparent">
+                          <p class="text-center c-brown f-16 f-bold">Education</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="assets/images/category.png" alt="">
+                        <div class="card-footer bg-transparent">
+                          <p class="text-center c-brown f-16 f-bold">Education</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="donate-category row pt-5">
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="assets/images/category.png" alt="">
+                        <div class="card-footer bg-transparent">
+                          <p class="text-center c-brown f-16 f-bold">Education</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="assets/images/category.png" alt="">
+                        <div class="card-footer bg-transparent">
+                          <p class="text-center c-brown f-16 f-bold">Education</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="assets/images/category.png" alt="">
+                        <div class="card-footer bg-transparent">
+                          <p class="text-center c-brown f-16 f-bold">Education</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="assets/images/category.png" alt="">
+                        <div class="card-footer bg-transparent">
+                          <p class="text-center c-brown f-16 f-bold">Education</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <section>
+                  <div class="row mt-5 justify-content-center">
+                    <div class="col-md-3 text-center">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination pg-blue">
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Previous">
+                              <span>Previous</span>
+                            </a>
+                          </li>
+                          <li class="page-item active"><a class="page-link">1</a></li>
+                          <li class="page-item"><a class="page-link">2</a></li>
+                          <li class="page-item"><a class="page-link">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" aria-label="Next">
+                              <span aria-hidden="true">Next</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="denomination" role="tabpanel" aria-labelledby="denomination-tab">
+                <div class="row justify-content-center">
+                  <div class="col-md-12">
+                    <section class="welfare-bg px-4 mb-5">
+                      <div class="row justify-content-end">
+                        <div class="col-md-5 mt-6">
+                          <div class="banner-text text-white">
+                            <h1 class="f-40 f-bold"> We Rise By Lending a Hand To Others</h1>
+                            <p class="f-16 f-med">
+                              Helping other people can be a cure, not just for those who are in need, but for your soul as well.
+                            </p>
+
+                            <button class="btn bg-red text-white f-bold mt-3" data-toggle="modal" data-target="#donateModal">Make A Donation</button>
+                            <button class="btn f-bold c-red bd-red mt-3" data-toggle="modal" data-target="#helpModal">Ask for help</button>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-md-3">
+                    <!-- user details -->
+                    <div class="user-section bg-white">
+                      <div class="general-block"></div>
+                        <img src="assets/images/user_1.png" class="img-fluid" alt='user big' />
+                        <div class="user-details text-center pb-3">
+                            <p class="f-14 f-bold c-blk mb-0">Akintunde Williams</p>
+                            <p class="f-12 f-med c-grey">Administrative officer for Deeper Life <br /> Bible Church</p>
+
+                        </div>
+                      </div>
+                      <div class="user__social-stats row mx-0 mt-2 bg-white px-2 py-3">
+                        <div class="col-md-7 c-grey f-med f-14">
+                          <p>Followers</p>
+                          <p>Following</p>
+                          <p>Post</p>
+                          <p>Groups</p>
+                        </div>
+                        <div class="col-md-5 c-brand f-med f-14 text-right">
+                          <p>52</p>
+                          <p>102</p>
+                          <p>12</p>
+                          <p>5</p>
+                        </div>
+                      </div>
+
+                    <div class="resources-section p-3 mt-3 bg-white">
+                        <p class="c-brand f-bold pointer" data-toggle="modal" data-target="#group">Create a Group</p>
+                        <p class="c-brand f-bold pointer" data-toggle="modal" data-target="#topic">Create a Topic</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <section class="donate">
+                      <div class="donate-heading text-center">
+                        <h3 class="f-bold f-32 c-brown">Donate By Category </h3>
+                        <p class="f-14 f-med c-grey">Helping other people can be a cure, not just for those who are in need, <br> but for your soul as well.</p>
+                        <form action="" class="row justify-content-center">
+                          <input type="text" class="col-md-5 mt-1 form-control" placeholder="Search by category or keyword..." required>
+                          <button class="col-md-3 btn btn-md bg-red text-white f-bold">Search</button>
+                        </form>
+                      </div>
+                    </section>
+                    <section class="donate-category row pt-5">
+                      <div class="col-md-6">
+                        <a href="donate_category.html" class="dis-block">
+                          <div class="card">
+                            <img src="assets/images/category.png" alt="">
+                            <div class="card-footer bg-transparent">
+                              <p class="text-center c-brown f-16 f-bold">Education</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card">
+                          <img src="assets/images/category.png" alt="">
+                          <div class="card-footer bg-transparent">
+                            <p class="text-center c-brown f-16 f-bold">Education</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="card">
+                          <img src="assets/images/category.png" alt="">
+                          <div class="card-footer bg-transparent">
+                            <p class="text-center c-brown f-16 f-bold">Education</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="card">
+                          <img src="assets/images/category.png" alt="">
+                          <div class="card-footer bg-transparent">
+                            <p class="text-center c-brown f-16 f-bold">Education</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="card">
+                          <img src="assets/images/category.png" alt="">
+                          <div class="card-footer bg-transparent">
+                            <p class="text-center c-brown f-16 f-bold">Education</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="card">
+                          <img src="assets/images/category.png" alt="">
+                          <div class="card-footer bg-transparent">
+                            <p class="text-center c-brown f-16 f-bold">Education</p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div class="row mt-5 justify-content-center">
+                        <div class="col-md-4 text-center">
+                          <nav aria-label="Page navigation example">
+                            <ul class="pagination pg-blue">
+                              <li class="page-item">
+                                <a class="page-link" aria-label="Previous">
+                                  <span>Previous</span>
+                                </a>
+                              </li>
+                              <li class="page-item active"><a class="page-link">1</a></li>
+                              <li class="page-item"><a class="page-link">2</a></li>
+                              <li class="page-item"><a class="page-link">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" aria-label="Next">
+                                  <span aria-hidden="true">Next</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-md-3">
+                    <section class="sidebar__right ">
+                      <!-- church logo -->
+                      <div class=" text-center bg-white py-3 mb-2">
+                        <img src="assets/images/church_logo.png" alt="">
+                        <p class="font-weight-bold">Deeper Life Bible Church</p>
+                      </div>
+                      <!-- FRIENDS SUGGESTIONS -->
+                      <div class="bg-white p-3">
+                        <h3 class="text-center c-brown f-16 f-bold">
+													People you may know
+												</h3>
+                        <div class="row mt-3">
+													<div class="col-12 col-lg-3">
+														<img src="assets/images/user_2.png" class="w-40" alt="user" />
+													</div>
+													<div class="col-12 col-lg-6 px-0">
+														<p class="f-12 f-med c-brand mb-0 ml-2">David Akinbami</p>
+														<p class="f-10 f-med c-grey ml-2">Deeper Life Bible Church</p>
+													</div>
+													<div class="col-12 col-lg-3  px-0">
+														<p class="c-brand f-14 f-med">Follow</p>
+													</div>
+												</div>
+                        <div class="row mt-3">
+													<div class="col-12 col-lg-3">
+														<img src="assets/images/user_2.png" class="w-40" alt="user" />
+													</div>
+													<div class="col-12 col-lg-6 px-0">
+														<p class="f-12 f-med c-brand mb-0 ml-2">David Akinbami</p>
+														<p class="f-10 f-med c-grey ml-2">Deeper Life Bible Church</p>
+													</div>
+													<div class="col-12 col-lg-3  px-0">
+														<p class="c-brand f-14 f-med">Follow</p>
+													</div>
+												</div>
+
+                        <div class="row mt-3">
+													<div class="col-12 col-lg-3">
+														<img src="assets/images/user_2.png" class="w-40" alt="user" />
+													</div>
+													<div class="col-12 col-lg-6 px-0">
+														<p class="f-12 f-med c-brand mb-0 ml-2">David Akinbami</p>
+														<p class="f-10 f-med c-grey ml-2">Deeper Life Bible Church</p>
+													</div>
+													<div class="col-12 col-lg-3  px-0">
+														<p class="c-brand f-14 f-med">Follow</p>
+													</div>
+												</div>
+                        <div class="text-center c-brand f-med mt-3 mb-3">
+                          View all
+                        </div>
+
+                      </div>
+                      <!-- Groups -->
+                      <section class="groups m t-3 bg-white p-3">
+                        <h3 class="f-16 f-bold">Groups you may like to join</h3>
+
+												<div class="row mt-3">
+													<div class=" col-lg-3">
+														<img src="assets/images/group-4.png" class="w-40" alt="user" />
+													</div>
+													<div class="col-lg-6 px-0">
+														<p class="f-12 f-bold c-brand mb-0">Redeem Youth Church</p>
+														<span class="f-10 f-bold c-grey">Deeper Life Bible Church</span>
+													</div>
+													<div class="col-lg-3  px-0 text-right pr-2">
+														<p class="c-brand f-14 f-med">Join</p>
+													</div>
+												</div>
+
+                        <div class="row mt-3">
+													<div class=" col-lg-3">
+														<img src="assets/images/group-4.png" class="w-40" alt="user" />
+													</div>
+													<div class="col-lg-6 px-0">
+														<p class="f-12 f-bold c-brand mb-0">Redeem Youth Church</p>
+														<span class="f-10 f-bold c-grey">Deeper Life Bible Church</span>
+													</div>
+													<div class="col-lg-3  px-0 text-right pr-2">
+														<p class="c-brand f-14 f-med">Join</p>
+													</div>
+												</div>
+
+                        <div class="row mt-3">
+													<div class=" col-lg-3">
+														<img src="assets/images/group-4.png" class="w-40" alt="user" />
+													</div>
+													<div class="col-lg-6 px-0">
+														<p class="f-12 f-bold c-brand mb-0">Redeem Youth Church</p>
+														<span class="f-10 f-bold c-grey">Deeper Life Bible Church</span>
+													</div>
+													<div class="col-lg-3  px-0 text-right pr-2">
+														<p class="c-brand f-14 f-med">Join</p>
+													</div>
+												</div>
+                        <div class="text-center c-brand f-med mt-3 mb-3">
+                          View all
+                        </div>
+                      </section>
+
+                    </section>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </main>
+
+
+        <!-- modal -->
+        <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModal"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content rounded">
+              <div class="modal-header bg-grey-light">
+                <h4 class="modal-title f-bold pl-2 text-center" id="addContentTitle">
+                  Donate To
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row justify-content-center donation-details">
+                    <div class="col-md-10 bg-grey-light">
+                      <div class="row py-3">
+                        <div class="col-md-4">
+                          <img src="assets/images/category.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-md-8 pt-3">
+                          <p class="c-brand f-bold f-12 mb-0">
+                            EDUCATION
+                          </p>
+                          <p class="f-12 mb-0 f-bold">
+                            7 Ways God Uses Fasting and Prayer to Prepare Your Family
+                          </p>
+                          <p class="mb-0">
+                            <span class="c-red amount-raised f-bold f-12">&#8358;140,000</span>
+                            <span class="c-brown f-bold f-12 target-amount">raised of &#8358;200,000</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <p class="text-center f-bold c-brown mt-4">Please fill the little information below</p>
+                <form action="">
+                  <div class="form-group">
+                    <label for="fullname" class="f-bold">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Enter your name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="f-bold">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                  </div>
+                  <div class="form-group mt-4 row">
+                    <div class="col-md-6">
+                      <label for="card"  class="f-bold">Card Number</label>
+                      <input type="text" id="card" name="card" class="form-control" placeholder="Enter your card number" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="amount" class="f-bold">Amount</label>
+                      <input type="text" id="amount" name="amount" class="form-control" placeholder="Enter the amount" required>
+                    </div>
+                  </div>
+                  <div class="form-group mt-4 row">
+                    <div class="col-md-6">
+                      <label for="exp-date" class="f-bold">Expiry Date</label>
+                      <input type="text" id="exp-date" name="exp-date" class="form-control" placeholder="Enter card expiry date" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="cvv" class="f-bold">CVV</label>
+                      <input type="text" id="cvv" name="cvv" class="form-control" placeholder=" Enter the cvv" required>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer text-right bg-grey-light">
+                  <button type="submit" class="btn btn-brand text-white btn-md">Donate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- create group modal -->
+        <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModal"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content rounded">
+              <div class="modal-header bg-grey-light">
+                <h4 class="modal-title f-bold pl-2" id="createGroupModal">
+                  Ask For Help
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="form-group">
+                    <label for="name" class="f-bold">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="subject" class="f-bold">Title or Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter the subject of need" required>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="category" class="f-bold">Select Category</label>
+                    <select name="category" id="category" class="form-control" required>
+                      <option value="education">Education</option>
+                      <option value="housing">Housing</option>
+                      <option value="feeding">Feeding</option>
+                    </select>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="amount" class="f-bold">Amount</label>
+                    <input type="text" id="amount" name="amount" class="form-control" placeholder="&#8358;" required>
+                  </div>
+                  <div class="form-group row mt-4">
+                    <div class="col-md-8">
+                      <label for="description" class="f-bold">Description</label>
+                      <textarea name="description" id="description" class="form-control h-100p"></textarea>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <label for="" class="f-bold mb-5">Upload Image</label>
+                      <div class="pos-rel">
+                        <label for="group-image" class="upload_group_image py-3">
+                          <img src="assets/images/camera.png" alt="">
+                        </label>
+                        <input type="file" id="group-image" name="group-image" class="group__hidden">
+                      </div>
+
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer text-right bg-grey-light">
+                  <button class="btn btn-brand text-white btn-md">Ask</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+    </body>
+</html>

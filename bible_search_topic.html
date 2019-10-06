@@ -86,12 +86,12 @@
               <div class="container mb-5">
                 <div class="v__nav">
                   <ol class=' bg-white f-14 f-bold list-unstyled mt-3'>
-                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item ">Believer's Fellowship / Network</a></li>
-                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item ">Church Organization Platform</a></li>
-                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item active">Biblical Search / Devotional</a></li>
-                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item">Online Store</a></li>
-                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item">Directry/Event Locator</a></li>
-                      <li class="v__nav-list"><a href="index.html" class="f-bold v__nav-item">Welfare</a></li>
+                      <li class="v__nav-list"><a href="network.html" class="f-bold v__nav-item ">Believer's Fellowship / Network</a></li>
+                      <li class="v__nav-list"><a href="group.html" class="f-bold v__nav-item ">Church Organization Platform</a></li>
+                      <li class="v__nav-list"><a href="denomination.html" class="f-bold v__nav-item active">Biblical Search / Devotional</a></li>
+                      <li class="v__nav-list"><a href="" class="f-bold v__nav-item">Online Store</a></li>
+                      <li class="v__nav-list"><a href="" class="f-bold v__nav-item">Directry/Event Locator</a></li>
+                      <li class="v__nav-list"><a href="welfare.html" class="f-bold v__nav-item">Welfare</a></li>
                   </ol>
                 </div>
               </div>
@@ -105,7 +105,7 @@
                       <input type="search" class="form-control bg-grey-light" placeholder="Search by topic or title">
                     </div>
                     <div class="col-md-2"></div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                       <ul class="nav nav-tabs denomination__tab nav-fill bg-white " >
                         <li class="nav-item mb-0" >
                           <a class="nav-link active" role="tablist"  id="biblesearch-tab" data-toggle="tab" href="#biblesearch"
@@ -119,11 +119,12 @@
                             <span class="nav__link-active"></span>
                           </a>
                         </li>
-
+                        <li class="nav-item mb-0">
+                          <a class=" btn btn-brand text-white btn-brand-lg"  role="tablist"  id="" data-toggle="modal"  data-target="#addContentModal"
+                            role="tab" aria-controls="" aria-selected="true">Add Content
+                          </a>
+                        </li>
                       </ul>
-                    </div>
-                    <div class="col-md-2">
-                      <button class="btn btn-brand text-white btn-brand-lg">Add Content</button>
                     </div>
                   </div>
                 </div>
@@ -240,7 +241,65 @@
               </section>
             </div>
             <!-- modals -->
-            
+            <div class="modal fade" id="addContentModal" tabindex="-1" role="dialog" aria-labelledby="addContentModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content rounded">
+                  <div class="modal-header bg-grey-light">
+                    <h4 class="modal-title f-bold pl-2" id="addContentTitle">
+                      Add Content
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="form-group">
+                        <label for="title" class="f-bold">Content Title</label>
+                        <input type="text" id="title" name="title" class="form-control" placeholder="Enter content title" required>
+                      </div>
+                      <div class="form-group mt-4">
+                        <label for="topic" class="f-bold">Select Topic</label>
+                        <select name="topic" id="topic" class="form-control">
+                          <option value="">Prayer</option>
+                          <option value="">Sunday School</option>
+                          <option value="">Fellowship</option>
+                        </select>
+                      </div>
+                      <div class="form-group mt-4 pos-rel">
+                        <label for="files" class="f-bold c-grey upload">
+                          <i class="fas fa-cloud c-brand fa-2x mb-2"></i>
+                          <br>
+                          Drag and Drop files here <br> or <span class="c-brand f-bold mt-2">Browse</span>
+                        </label>
+                        <input type="file" id="files" name="files" class="form-control upload__files-input" required>
+                      </div>
+                      <div class="form-group row mt-4">
+                        <div class="col-md-6">
+                          <button class="btn c-brand no-bs ">
+                            <i class="fas fa-image"></i>
+                            Add Image / Video
+                          </button>
+                        </div>
+                        <div class="col-md-6">
+                          <button class="btn c-brand no-bs ">
+                              <i class="fas fa-angle-left"></i>
+                              <i class="fas fa-angle-right pr-2"></i>
+                            Add an embed
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer text-right bg-grey-light">
+                      <button class="btn btn-brand text-white btn-md">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
         </main>
 
 

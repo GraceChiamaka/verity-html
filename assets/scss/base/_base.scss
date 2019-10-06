@@ -63,6 +63,8 @@ main{
 .w-80{
   width: 80%;
 }
+.w-80p{ width: 80px; }
+.h-100p{ height: 100px !important; }
 .border-none{
   border: 0 !important;
 }
@@ -77,6 +79,7 @@ main{
 .f-18{ font-size: $size-3; }
 .f-20{ font-size: $size-4; }
 .f-24{ font-size: 24px; }
+.f-32{ font-size: 32px; }
 .f-40{ font-size: 40px; }
 .f-52{
     font-size: $size-x;
