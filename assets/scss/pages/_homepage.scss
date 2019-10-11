@@ -8,26 +8,13 @@ body[data-page="homepage"]{
   width: 100%;
   height: 100%;
 }
-// body[data-page="first-page"]{
-//   background-image: url('../../assets/images/Vector.png');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   width: 100%;
-//   height: 100%;
-// }
-.body-bg{
+
+#get_started{
   background-image: url('../../assets/images/Vector.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 500px;
-  margin-top: -10rem;
-  padding-top: 5rem;
-  @include screenSize(ss-phone){
-    margin-top:-25rem;
-    padding-top: 20rem;
-    height: 750px;
-  }
+  height: 130px;
 }
 ol.list-lg {
   list-style: none;
