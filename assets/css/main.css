@@ -96,6 +96,10 @@ main {
   font-size: 12px;
 }
 
+.f-13 {
+  font-size: 13px;
+}
+
 .f-14 {
   font-size: 0.875rem !important;
 }
@@ -647,13 +651,13 @@ ol.list-lg li::before {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .post-likes, .post-comment {
+  .post-likes, .view-comment {
     font-size: 12px;
   }
 }
 
 @media (max-width: 375px) {
-  .post-likes, .post-comment {
+  .post-likes, .view-comment {
     font-size: 12px;
     margin-right: 10px !important;
   }
@@ -706,6 +710,15 @@ ol.list-lg li::before {
 
 .user-section .user-details {
   margin-top: 3rem;
+}
+
+.hide {
+  display: none;
+}
+
+.partial-comments {
+  max-height: 450px;
+  overflow-y: scroll;
 }
 
 .nav__bg {

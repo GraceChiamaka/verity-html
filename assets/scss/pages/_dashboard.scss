@@ -53,7 +53,7 @@
         }
     }
 }
-.post-likes, .post-comment{
+.post-likes, .view-comment{
     @include screenSize(tablet){
         font-size:12px;
     }
@@ -99,4 +99,11 @@
 
     }
     .user-details{ margin-top: 3rem; }
+}
+.hide{
+  display: none;
+}
+.partial-comments{
+  max-height: 450px;
+  overflow-y: scroll;
 }
