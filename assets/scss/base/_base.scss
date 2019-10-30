@@ -42,11 +42,17 @@ main{
 .bg-yellow{
   background: $color-3;
 }
+.bg-blue{
+  background: $color-1;
+}
 .bg-red{
   background: $color-2;
 }
 .bg-grey-light{
   background: $color-5;
+}
+.bg-brand{
+  background: linear-gradient(180deg, #D97159 0%, #08587D 100%);
 }
 
 //Borders

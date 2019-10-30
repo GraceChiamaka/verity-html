@@ -51,12 +51,20 @@ main {
   background: #FAE7D4;
 }
 
+.bg-blue {
+  background: #08587d;
+}
+
 .bg-red {
   background: #D97159;
 }
 
 .bg-grey-light {
   background: rgba(224, 224, 224, 0.5);
+}
+
+.bg-brand {
+  background: linear-gradient(180deg, #D97159 0%, #08587D 100%);
 }
 
 .bd-left--brand {
@@ -973,6 +981,14 @@ ol.list-lg li::before {
 
 .pagination .page-item.active {
   background: #D97159 !important;
+  color: #fff;
+}
+
+.pagination .page-item.resource-active {
+  background: #08587d;
+}
+
+.pagination .page-item.resource-active .page-link {
   color: #fff;
 }
 

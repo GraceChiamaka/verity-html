@@ -79,6 +79,12 @@
     background: $color-2 !important;
     color: #fff;
   }
+  .page-item.resource-active{
+    background: $color-1;
+    .page-link{
+      color: #fff;
+    }
+  }
   .page-item.active .page-link {
     background-color: $color-2 !important;
     box-shadow: none !important;
