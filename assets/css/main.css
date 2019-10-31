@@ -398,6 +398,20 @@ footer.footer p a:hover {
   }
 }
 
+.dashboard-header.dropdown-toggle {
+  padding: 0 !important;
+  border-radius: 50%;
+}
+
+.dashboard-header.dropdown-toggle:focus {
+  border: 1px solid #08587d;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-header.dropdown-toggle::after {
+  display: none !important;
+}
+
 .dashboard-nav--dropdown {
   width: 60px;
 }
