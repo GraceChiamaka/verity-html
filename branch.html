@@ -108,12 +108,13 @@
                           </div>
                       </div>
                       <div class="col-12 col-md-6">
-                          <ul class="branch-tabs">
+                          <ul class="nav nav-tabs nav-fill branch-tabs">
                               <li class="branch-item active f-16 c-brand f-bold">
-                                  <a href="/branch"> Posts <span class="post-count">(234)</span> </a>
+                                  <a href="#posts" role="tablist"  id="general-tab" data-toggle="tab"
+                                    role="tab" aria-controls="posts" aria-selected="true"> Posts <span class="post-count">(234)</span> </a>
                               </li>
                               <li class="branch-item">
-                                  <a href="/branch"> Members<span class='member-count'>(120)</span> </a>
+                                  <a href="#members" id="members-tab" data-toggle="tab" role="tab" aria-controls="members" aria-selected="members"> Members<span class='member-count'>(120)</span> </a>
                               </li>
                           </ul>
                       </div>
@@ -199,305 +200,366 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <section class="posts">
-                    <section class="create-post p-3">
-                        <div class="media">
-                            <img src='assets/images/user_2.png' class="mr-3" alt="logged in user" />
-                            <div class="media-body">
-                                <input type="text" class="create-post-input f-14 f-bold" placeholder='Create a post...' />
-                                <div class="uploads mt-3">
-                                    <input type="file" class="upload-input" />
-                                    <button class="btn add-btn c-brand f-bold btn-md-block "><i class="fa fa-image mr-2"></i>Add branch</button>
-                                    <button class="btn add-btn c-brand f-bold ml-3">
-                                        <i class="fa fa-tag c-brand mr-1"></i>
-                                        Tag Members
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class='old-post bg-white border p-4'>
-                        <div class="post-header">
-                            <div class="row justify-content-between">
-                                <div class="col-9 col-md-7 col-lg-7">
-                                    <div class="row">
-                                        <div class="col-4 col-md-3 col-lg-3 pr-0 ">
-                                            <img src="assets/images/user_2.png" class="img-fluid " alt='logged in user' />
-                                        </div>
-                                        <div class="col-7 col-md-9 col-lg-6 pl-0">
-                                            <p class='c-brand f-14 f-bold mb-0'>David Akinbami</p>
-                                            <p class="c-grey f-12 f-med">4 hrs Ago</p>
-                                        </div>
+                <div class="tab-content" id="myTabContent5">
+                  <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                    <section class="posts">
+                        <section class="create-post p-3">
+                            <div class="media">
+                                <img src='assets/images/user_2.png' class="mr-3" alt="logged in user" />
+                                <div class="media-body">
+                                    <input type="text" class="create-post-input f-14 f-bold" placeholder='Create a post...' />
+                                    <div class="uploads mt-3">
+                                        <input type="file" class="upload-input" />
+                                        <button class="btn add-btn c-brand f-bold btn-md-block "><i class="fa fa-image mr-2"></i>Add branch</button>
+                                        <button class="btn add-btn c-brand f-bold ml-3">
+                                            <i class="fa fa-tag c-brand mr-1"></i>
+                                            Tag Members
+                                        </button>
                                     </div>
-
-                                </div>
-                                <div class="col-3 col-md-2 col-lg-3">
-                                    <button class="btn btn-sm bg-transparent border-0 pull-right no-bs no-bs--show">
-                                        <i class="fa fa-ellipsis-h f-16 c-blue"></i>
-                                    </button>
                                 </div>
                             </div>
-                            <div class="mt-4">
-                                <p class=" f-12 f-med">
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                </p>
-                                <img src="assets/images/post_1.png" class="w-100" alt='user post' />
-                            </div>
-                            <div class=" mt-3 px-3">
+                        </section>
+                        <section class='old-post bg-white border p-4'>
+                            <div class="post-header">
                                 <div class="row justify-content-between">
-                                    <div class="col-9 col-lg-6">
-                                        <span class="post-likes c-blue f-14 mr-3 f-bold">
-                                            <i class="far fa-heart mr-2 f-16"></i>
-                                            20 likes
-                                        </span>
-                                        <span class="post-comment c-blue f-14 f-bold">
-                                            <i class="far fa-comment mr-2 f-16"></i>
-                                            12 comments
-                                        </span>
-                                    </div>
-                                    <div class="col-3 col-lg-3 text-right px-0">
-                                        <i class="far fa-bookmark c-blue"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment-box mt-4">
-                                <div class="row">
-                                    <div class="col-2 col-md-2 pr-0 pt-3">
-                                        <img src="assets/images/user_3.png" class="img-fluid" alt="" />
+                                    <div class="col-9 col-md-7 col-lg-7">
+                                        <div class="row">
+                                            <div class="col-4 col-md-3 col-lg-3 pr-0 ">
+                                                <img src="assets/images/user_2.png" class="img-fluid " alt='logged in user' />
+                                            </div>
+                                            <div class="col-7 col-md-9 col-lg-6 pl-0">
+                                                <p class='c-brand f-14 f-bold mb-0'>David Akinbami</p>
+                                                <p class="c-grey f-12 f-med">4 hrs Ago</p>
+                                            </div>
+                                        </div>
 
                                     </div>
-                                    <div class="col-10 col-md-10 pl-0">
-                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control border-right-0" placeholder="Comment..."
-                                                aria-label="Comment..." aria-describedby="basic-addon2" />
-                                            <div class="input-group-append">
-                                                <span class="input-group-text border-left-0" id="basic-addon2">
-                                                    <i class="fa fa-image c-blue"></i>
-                                                </span>
+                                    <div class="col-3 col-md-2 col-lg-3">
+                                        <button class="btn btn-sm bg-transparent border-0 pull-right no-bs no-bs--show">
+                                            <i class="fa fa-ellipsis-h f-16 c-blue"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class=" f-12 f-med">
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                    </p>
+                                    <img src="assets/images/post_1.png" class="w-100" alt='user post' />
+                                </div>
+                                <div class=" mt-3 px-3">
+                                    <div class="row justify-content-between">
+                                        <div class="col-9 col-lg-6">
+                                            <span class="post-likes c-blue f-14 mr-3 f-bold">
+                                                <i class="far fa-heart mr-2 f-16"></i>
+                                                20 likes
+                                            </span>
+                                            <span class="post-comment c-blue f-14 f-bold">
+                                                <i class="far fa-comment mr-2 f-16"></i>
+                                                12 comments
+                                            </span>
+                                        </div>
+                                        <div class="col-3 col-lg-3 text-right px-0">
+                                            <i class="far fa-bookmark c-blue"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-box mt-4">
+                                    <div class="row">
+                                        <div class="col-2 col-md-2 pr-0 pt-3">
+                                            <img src="assets/images/user_3.png" class="img-fluid" alt="" />
+
+                                        </div>
+                                        <div class="col-10 col-md-10 pl-0">
+                                             <div class="input-group mb-3">
+                                                <input type="text" class="form-control border-right-0" placeholder="Comment..."
+                                                    aria-label="Comment..." aria-describedby="basic-addon2" />
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text border-left-0" id="basic-addon2">
+                                                        <i class="fa fa-image c-blue"></i>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class='old-post bg-white border p-4'>
-                        <div class="post-header">
-                            <div class="row justify-content-between">
-                                <div class="col-9 col-md-7 col-lg-7">
-                                    <div class="row">
-                                        <div class="col-4 col-md-3 col-lg-3 pr-0">
-                                            <img src="assets/images/user_2.png" class="img-fluid " alt='logged in user' />
-                                        </div>
-                                        <div class="col-7 col-md-9 col-lg-6 pl-0">
-                                            <p class='c-brand f-14 f-bold mb-0'>David Akinbami</p>
-                                            <p class="c-grey f-12 f-med">4 hrs Ago</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-3 col-md-2 col-lg-3">
-                                    <button class="btn bg-transparent border-0 pull-right  no-bs no-bs--show">
-                                        <i class="fa fa-ellipsis-h f-16 c-blue"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <p class=" f-12 f-med">
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                </p>
-                                <img src="assets/images/post_1.png" class="w-100" alt='user post' />
-                            </div>
-                            <div class=" mt-3 px-3">
+                        </section>
+                        <section class='old-post bg-white border p-4'>
+                            <div class="post-header">
                                 <div class="row justify-content-between">
-                                    <div class="col-9 col-lg-6">
-                                        <span class="post-likes c-blue f-14 mr-3 f-bold">
-                                            <i class="far fa-heart mr-2 f-16"></i>
-                                            20 likes
-                                        </span>
-                                        <span class="post-comment c-blue f-14 f-bold">
-                                            <i class="far fa-comment mr-2 f-16"></i>
-                                            12 comments
-                                        </span>
-                                    </div>
-                                    <div class="col-3 col-lg-3 px-0 text-right">
-                                        <i class="far fa-bookmark c-blue"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment-box mt-4">
-                                <div class="row">
-                                    <div class="col-2 col-md-2 pr-0 pt-3">
-                                        <img src="assets/images/user_3.png" class="img-fluid" alt="" />
+                                    <div class="col-9 col-md-7 col-lg-7">
+                                        <div class="row">
+                                            <div class="col-4 col-md-3 col-lg-3 pr-0">
+                                                <img src="assets/images/user_2.png" class="img-fluid " alt='logged in user' />
+                                            </div>
+                                            <div class="col-7 col-md-9 col-lg-6 pl-0">
+                                                <p class='c-brand f-14 f-bold mb-0'>David Akinbami</p>
+                                                <p class="c-grey f-12 f-med">4 hrs Ago</p>
+                                            </div>
+                                        </div>
 
                                     </div>
-                                    <div class="col-10 col-md-10 pl-0">
-                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control border-right-0" placeholder="Comment..."
-                                                aria-label="Comment..." aria-describedby="basic-addon2" />
-                                            <div class="input-group-append">
-                                                <span class="input-group-text border-left-0" id="basic-addon2">
-                                                    <i class="fa fa-image c-blue"></i>
-                                                </span>
+                                    <div class="col-3 col-md-2 col-lg-3">
+                                        <button class="btn bg-transparent border-0 pull-right  no-bs no-bs--show">
+                                            <i class="fa fa-ellipsis-h f-16 c-blue"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class=" f-12 f-med">
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                    </p>
+                                    <img src="assets/images/post_1.png" class="w-100" alt='user post' />
+                                </div>
+                                <div class=" mt-3 px-3">
+                                    <div class="row justify-content-between">
+                                        <div class="col-9 col-lg-6">
+                                            <span class="post-likes c-blue f-14 mr-3 f-bold">
+                                                <i class="far fa-heart mr-2 f-16"></i>
+                                                20 likes
+                                            </span>
+                                            <span class="post-comment c-blue f-14 f-bold">
+                                                <i class="far fa-comment mr-2 f-16"></i>
+                                                12 comments
+                                            </span>
+                                        </div>
+                                        <div class="col-3 col-lg-3 px-0 text-right">
+                                            <i class="far fa-bookmark c-blue"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-box mt-4">
+                                    <div class="row">
+                                        <div class="col-2 col-md-2 pr-0 pt-3">
+                                            <img src="assets/images/user_3.png" class="img-fluid" alt="" />
+
+                                        </div>
+                                        <div class="col-10 col-md-10 pl-0">
+                                             <div class="input-group mb-3">
+                                                <input type="text" class="form-control border-right-0" placeholder="Comment..."
+                                                    aria-label="Comment..." aria-describedby="basic-addon2" />
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text border-left-0" id="basic-addon2">
+                                                        <i class="fa fa-image c-blue"></i>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class='old-post bg-white border p-4'>
-                        <div class="post-header">
-                            <div class="row justify-content-between">
-                                <div class="col-9 col-md-7 col-lg-7">
-                                    <div class="row">
-                                        <div class="col-4 col-md-3 col-lg-3 pr-0">
-                                            <img src="assets/images/user_2.png" class="img-fluid " alt='logged in user' />
-                                        </div>
-                                        <div class="col-7 col-md-9 col-lg-6 pl-0">
-                                            <p class='c-brand f-14 f-bold mb-0'>David Akinbami</p>
-                                            <p class="c-grey f-12 f-med">4 hrs Ago</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-3 col-md-2 col-lg-3">
-                                    <button class="btn bg-transparent border-0 pull-right  no-bs no-bs--show">
-                                        <i class="fa fa-ellipsis-h f-16 c-blue"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <p class=" f-12 f-med">
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                </p>
-                                <img src="assets/images/post_1.png" class="w-100" alt='user post' />
-                            </div>
-                            <div class=" mt-3 px-3">
+                        </section>
+                        <section class='old-post bg-white border p-4'>
+                            <div class="post-header">
                                 <div class="row justify-content-between">
-                                    <div class="col-9 col-lg-6">
-                                        <span class="post-likes c-blue f-14 mr-3 f-bold">
-                                            <i class="fa fa-heart-o mr-2"></i>
-                                            20 likes
-                                        </span>
-                                        <span class="post-comment c-blue f-14 f-bold">
-                                            <i class="fa fa-comment-o mr-2"></i>
-                                            12 comments
-                                        </span>
+                                    <div class="col-9 col-md-7 col-lg-7">
+                                        <div class="row">
+                                            <div class="col-4 col-md-3 col-lg-3 pr-0">
+                                                <img src="assets/images/user_2.png" class="img-fluid " alt='logged in user' />
+                                            </div>
+                                            <div class="col-7 col-md-9 col-lg-6 pl-0">
+                                                <p class='c-brand f-14 f-bold mb-0'>David Akinbami</p>
+                                                <p class="c-grey f-12 f-med">4 hrs Ago</p>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="col-3 col-lg-3 text-right px-0">
-                                        <i class="far fa-bookmark c-blue"></i>
+                                    <div class="col-3 col-md-2 col-lg-3">
+                                        <button class="btn bg-transparent border-0 pull-right  no-bs no-bs--show">
+                                            <i class="fa fa-ellipsis-h f-16 c-blue"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class=" f-12 f-med">
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                    </p>
+                                    <img src="assets/images/post_1.png" class="w-100" alt='user post' />
+                                </div>
+                                <div class=" mt-3 px-3">
+                                    <div class="row justify-content-between">
+                                        <div class="col-9 col-lg-6">
+                                            <span class="post-likes c-blue f-14 mr-3 f-bold">
+                                                <i class="fa fa-heart-o mr-2"></i>
+                                                20 likes
+                                            </span>
+                                            <span class="post-comment c-blue f-14 f-bold">
+                                                <i class="fa fa-comment-o mr-2"></i>
+                                                12 comments
+                                            </span>
+                                        </div>
+                                        <div class="col-3 col-lg-3 text-right px-0">
+                                            <i class="far fa-bookmark c-blue"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-box mt-4">
+                                    <div class="row">
+                                        <div class="col-2 col-md-2 pr-0 pt-3">
+                                            <img src="assets/images/user_3.png" class="img-fluid" alt="" />
+
+                                        </div>
+                                        <div class="col-10 col-md-10 pl-0">
+                                             <div class="input-group mb-3">
+                                                <input type="text" class="form-control border-right-0" placeholder="Comment..."
+                                                    aria-label="Comment..." aria-describedby="basic-addon2" />
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text border-left-0" id="basic-addon2">
+                                                        <i class="fa fa-image c-blue"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="comment-box mt-4">
-                                <div class="row">
-                                    <div class="col-2 col-md-2 pr-0 pt-3">
-                                        <img src="assets/images/user_3.png" class="img-fluid" alt="" />
+                        </section>
+                        <section class='old-post bg-white border p-4'>
+                            <div class="post-header">
+                                <div class="row justify-content-between">
+                                    <div class="col-9 col-md-7 col-lg-7">
+                                        <div class="row">
+                                            <div class="col-4 col-md-3 col-lg-3 pr-0">
+                                                <img src="assets/images/user_2.png" class="img-fluid " alt='logged in user' />
+                                            </div>
+                                            <div class="col-7 col-md-9 col-lg-6 pl-0">
+                                                <p class='c-brand f-14 f-bold mb-0'>David Akinbami</p>
+                                                <p class="c-grey f-12 f-med">4 hrs Ago</p>
+                                            </div>
+                                        </div>
 
                                     </div>
-                                    <div class="col-10 col-md-10 pl-0">
-                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control border-right-0" placeholder="Comment..."
-                                                aria-label="Comment..." aria-describedby="basic-addon2" />
-                                            <div class="input-group-append">
-                                                <span class="input-group-text border-left-0" id="basic-addon2">
-                                                    <i class="fa fa-image c-blue"></i>
-                                                </span>
+                                    <div class="col-3 col-md-2 col-lg-3">
+                                        <button class="btn bg-transparent border-0 pull-right  no-bs no-bs--show">
+                                            <i class="fa fa-ellipsis-h f-16 c-blue"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class=" f-12 f-med">
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                        Frontier for growth in the development of local expertise in the subsea of oil
+                                        and gas industry and that Brisktrode will play a key role in driving this agenda.
+                                    </p>
+
+                                </div>
+                                <div class=" mt-3 px-3">
+                                    <div class="row justify-content-between">
+                                        <div class="col-9 col-lg-6">
+                                            <span class="post-likes c-blue f-14 mr-3 f-bold">
+                                                <i class="fa fa-heart-o mr-2"></i>
+                                                20 likes
+                                            </span>
+                                            <span class="post-comment c-blue f-14 f-bold">
+                                                <i class="fa fa-comment-o mr-2"></i>
+                                                12 comments
+                                            </span>
+                                        </div>
+                                        <div class="col-3 col-lg-3 text-right px-0">
+                                            <i class="far fa-bookmark c-blue "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-box mt-4">
+                                    <div class="row">
+                                        <div class="col-2 col-md-2 pr-0 pt-3">
+                                            <img src="assets/images/user_3.png" class="img-fluid" alt="" />
+                                        </div>
+                                        <div class="col-10 col-md-10 pl-0">
+                                             <div class="input-group mb-3">
+                                                <input type="text" class="form-control border-right-0" placeholder="Comment..."
+                                                    aria-label="Comment..." aria-describedby="basic-addon2" />
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text border-left-0" id="basic-addon2">
+                                                        <i class="fa fa-image c-blue"></i>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </section>
-                    <section class='old-post bg-white border p-4'>
-                        <div class="post-header">
-                            <div class="row justify-content-between">
-                                <div class="col-9 col-md-7 col-lg-7">
-                                    <div class="row">
-                                        <div class="col-4 col-md-3 col-lg-3 pr-0">
-                                            <img src="assets/images/user_2.png" class="img-fluid " alt='logged in user' />
-                                        </div>
-                                        <div class="col-7 col-md-9 col-lg-6 pl-0">
-                                            <p class='c-brand f-14 f-bold mb-0'>David Akinbami</p>
-                                            <p class="c-grey f-12 f-med">4 hrs Ago</p>
-                                        </div>
-                                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="members" role="tabpanel" aria-labelledby="members-tab">
+                    <form action="" class="my-5"><input type="text" class="form-control" placeholder="Search members..."></form>
+                    <section class="members mt-5">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card row">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img src="assets/images/pro.jpg" class="w-100 h-100 img-fluid" alt="">
+                              </div>
+                              <div class="col-md-5 pl-0">
+                                <p class=" mt-2 mb-0"><a href="user_profile.html" class="c-brand f-bold f-16">Samuel Teju</a></p>
+                                <p class="c-brown f-14">Member Deeper Life Christian Church</p>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="dropdown pt-3">
+                                  <button class="btn btn-brand white-text dropdown-toggle mr-4 px-4 py-2" type="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Action</button>
 
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                  </div>
                                 </div>
-                                <div class="col-3 col-md-2 col-lg-3">
-                                    <button class="btn bg-transparent border-0 pull-right  no-bs no-bs--show">
-                                        <i class="fa fa-ellipsis-h f-16 c-blue"></i>
-                                    </button>
-                                </div>
+                              </div>
                             </div>
-                            <div class="mt-4">
-                                <p class=" f-12 f-med">
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                    Frontier for growth in the development of local expertise in the subsea of oil
-                                    and gas industry and that Brisktrode will play a key role in driving this agenda.
-                                </p>
-
-                            </div>
-                            <div class=" mt-3 px-3">
-                                <div class="row justify-content-between">
-                                    <div class="col-9 col-lg-6">
-                                        <span class="post-likes c-blue f-14 mr-3 f-bold">
-                                            <i class="fa fa-heart-o mr-2"></i>
-                                            20 likes
-                                        </span>
-                                        <span class="post-comment c-blue f-14 f-bold">
-                                            <i class="fa fa-comment-o mr-2"></i>
-                                            12 comments
-                                        </span>
-                                    </div>
-                                    <div class="col-3 col-lg-3 text-right px-0">
-                                        <i class="far fa-bookmark c-blue "></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment-box mt-4">
-                                <div class="row">
-                                    <div class="col-2 col-md-2 pr-0 pt-3">
-                                        <img src="assets/images/user_3.png" class="img-fluid" alt="" />
-                                    </div>
-                                    <div class="col-10 col-md-10 pl-0">
-                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control border-right-0" placeholder="Comment..."
-                                                aria-label="Comment..." aria-describedby="basic-addon2" />
-                                            <div class="input-group-append">
-                                                <span class="input-group-text border-left-0" id="basic-addon2">
-                                                    <i class="fa fa-image c-blue"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                          </div>
                         </div>
+                      </div>
                     </section>
-                </section>
+                    <section>
+                      <div class="row mt-5 justify-content-center">
+                        <div class="col-md-3 text-center">
+                          <nav aria-label="Page navigation example">
+                            <ul class="pagination pg-blue">
+                              <li class="page-item">
+                                <a class="page-link" aria-label="Previous">
+                                  <span>Previous</span>
+                                </a>
+                              </li>
+                              <li class="page-item resource-active"><a class="page-link">1</a></li>
+                              <li class="page-item"><a class="page-link">2</a></li>
+                              <li class="page-item"><a class="page-link">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" aria-label="Next">
+                                  <span aria-hidden="true">Next</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
               </div>
               <div class="col-md-3">
                 <section class="sidebar__right">
