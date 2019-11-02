@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Verity</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body data-page="dashboard" class="bg-grey-light">
+        <header class="dashboard__header">
+            <nav class="navbar navbar-expand-lg bg-white">
+              <div class="container">
+                <button class="navbar-toggler bd-brand" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                              <i class="fas fa-home f-24 mr-1 c-blue"></i>
+                              <span class="c-blue f-bold f-14">HOME</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-4 mx-md-0" href="signup.html">
+                              <i class="fas fa-bell f-24 c-blue mr-1"></i>
+                              <span class="c-blue font-weight-bold f-14">NOTIFICATIONS</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="messages.html">
+                              <i class="fas fa-envelope f-24 c-blue mr-1"></i>
+                              <span class="c-blue font-weight-bold f-14">MESSAGES</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="m-auto">
+                      <a class="navbar-brand" href="index.html">
+                          <img src="./assets/images/s4.png" alt="logo">
+                      </a>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                      <form class="form-inline my-2 my-lg-0 mr-2">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control navbar__input" aria-label="Search verity" placeholder="Search verity">
+                          <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                          </div>
+                        </div>
+                      </form>
+                      <li class="nav-item dropdown">
+                        <a href="" class="nav-link dashboard-nav--dropdown dashboard-header dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="./assets/images/user.png" class="user-img img-fluid" alt="user" />
+                          <span class="blue-dot"></span>
+                        </a>
+
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                        <!-- Basic dropdown -->
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+        </header>
+        <main class="mt-5 mb-6e">
+          <div class="container mt-3">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <section class="user-details border p-2">
+                  <div class="row">
+                    <div class="col-2 text-center pr-md-0">
+                      <img src="assets/images/user_2.png" alt="" class=" img-fluid">
+                    </div>
+                    <div class="col-8 pl-md-0">
+                      <p class="f-bold c-black mb-0">kehinde Adebayo</p>
+                      <p>Member Christ the King Church</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="messages bg-white p-3 p-md-5">
+                  <div class="message message-received">
+                    <span>Hey, How are you doing?</span>
+                  </div>
+                  <div class="message message-sent mt-5">
+                    <span>Hey, How are you doing?</span>
+                  </div>
+                  <div class="message message-received mt-5">
+                    <span>Hey,Let's meet up this weekend at the crusade</span>
+                  </div>
+                  <div class="message message-sent mt-5">
+                    <span>Hey, How are you doing?</span>
+                  </div>
+                  <div class="message message-received mt-5">
+                    <span>Hey,Let's meet up this weekend at the crusade</span>
+                  </div>
+                  <div class="message message-sent mt-5">
+                    <span>Hey, How are you doing?</span>
+                  </div>
+                  <div class="message message-received mt-5">
+                    <span>Hey,Let's meet up this weekend at the crusade</span>
+                  </div>
+                  <div class="message message-sent mt-5">
+                    <span>Hey, How are you doing?</span>
+                  </div>
+                  <div class="message message-received mt-5">
+                    <span>Hey,Let's meet up this weekend at the crusade</span>
+                  </div>
+                  <div class="message message-sent mt-5">
+                    <span>Hey, How are you doing?</span>
+                  </div>
+                </section>
+                <section class="write-message border bg-white p-2 mt-0">
+                  <div class="row">
+                    <div class="col-3 col-md-2">
+                      <div class="message-image-addon">
+                        <label for="message-image-input" title="attach an image"><i class="fas fa-image c-brand fa-2x"></i></label>
+                        <input type="file" id="message-image-input" class="message-image-input">
+                      </div>
+                      <div class="message-file-addon ml-2">
+                        <label for="message-file-input" title="attach files"><i class="fas fa-file fa-2x c-brand"></i></label>
+                        <input type="file" id="message-file-input" class="message-file-input" multiple>
+                      </div>
+                    </div>
+                    <div class="col-9 col-md-8">
+                      <textarea type="text" class="form-control v__input" placeholder="Write a message"></textarea>
+                    </div>
+                    <div class=" col-md-2">
+                      <button class="btn btn-md white-text bg-brand send-message">Send</button>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+    </body>
+</html>
