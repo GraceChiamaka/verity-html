@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Verity</title>
+
+        <!-- Bootstrap CSS -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body data-page="dashboard" class="bg-grey-light">
+        <header class="dashboard__header">
+            <nav class="navbar navbar-expand-lg bg-white">
+              <div class="container">
+                <button class="navbar-toggler bd-brand" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                              <i class="fas fa-home f-24 mr-1 c-blue"></i>
+                              <span class="c-blue f-bold f-14">HOME</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-4 mx-md-0" href="">
+                              <i class="fas fa-bell f-24 c-blue mr-1"></i>
+                              <span class="c-blue font-weight-bold f-14">NOTIFICATIONS</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="messages.html">
+                              <i class="fas fa-envelope f-24 c-blue mr-1"></i>
+                              <span class="c-blue font-weight-bold f-14">MESSAGES</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="m-auto">
+                      <a class="navbar-brand" href="index.html">
+                          <img src="./assets/images/s4.png" alt="logo">
+                      </a>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                      <form class="form-inline my-2 my-lg-0 mr-2">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control navbar__input" aria-label="Search verity" placeholder="Search verity">
+                          <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                          </div>
+                        </div>
+                      </form>
+                      <li class="nav-item dropdown">
+                        <a href="" class="nav-link dashboard-nav--dropdown  dashboard-header  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="./assets/images/user.png" class="user-img img-fluid" alt="user" />
+                          <span class="blue-dot"></span>
+                        </a>
+
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="user_profile.html">Profile</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="login.html">Logout </a>
+                        </div>
+                        <!-- Basic dropdown -->
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+        </header>
+        <main class=" mb-6e">
+          <div class="container mt-3">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <!-- user profille -->
+                <div class="user-profile pt-4">
+                    <div class="card">
+                      <img src="assets/images/user_profile.jpg" class="w-100 card-image-top" alt="">
+                      <div class="card-body">
+                        <p class="mb-0">Adebayo Sara Croft</p>
+                        <p class="mb-0"><em>@LaraCroft</em></p>
+                        <p class="mb-0">Followers: <span>200</span></p>
+                        <p class="mb-0">Following: <span>12</span></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-8">
+                <section class="user-details pt-4">
+                  <h1>Profile Details</h1>
+                  <div class="card px-3 mt-3 pt-3">
+                    <div class="card-title row justify-content-between">
+                      <div class="col-8 f-24 f-bold c-brand">Bio Data</div>
+                      <div class="col-4 text-right">
+                        <button class="btn bg-brand btn-sm white-text" title="Edit bio data" data-toggle="modal" data-target="#editBioData"><i class="fas fa-edit"></i></button>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="f-bold">Full Name</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                          <tr>
+                            <td class="f-bold">Email</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                          <tr>
+                            <td class="f-bold">Phone Number</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                          <tr>
+                            <td class="f-bold">Full Name</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="card px-3 mt-3">
+                    <div class="card-title row justify-content-between">
+                      <div class="col-8 f-24 f-bold c-brand">Denomination</div>
+                      <div class="col-4 text-right">
+                        <button class="btn bg-brand btn-sm white-text" title="Edit bio data"><i class="fas fa-edit"></i></button>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="f-bold">Full Name</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                          <tr>
+                            <td class="f-bold">Email</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                          <tr>
+                            <td class="f-bold">Phone Number</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                          <tr>
+                            <td class="f-bold">Full Name</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="card px-3 mt-3">
+                    <div class="card-title row justify-content-between">
+                      <div class="col-8 f-24 f-bold c-brand">Business Data</div>
+                      <div class="col-4 text-right">
+                        <button class="btn bg-brand btn-sm white-text" title="Edit bio data"><i class="fas fa-edit"></i></button>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="f-bold">Full Name</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                          <tr>
+                            <td class="f-bold">Email</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                          <tr>
+                            <td class="f-bold">Phone Number</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                          <tr>
+                            <td class="f-bold">Full Name</td>
+                            <td class="f-bold">Adegoke Sara Croft</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                </section>
+                </div>
+              </div>
+            </div>
+        </main>
+
+        <!-- modal -->
+        <div class="modal fade" id="editBioData" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content rounded">
+              <div class="modal-header">
+                <h3 class="modal-title pl-2" id="exampleModalLabel">
+                  Edit Bio Data
+                </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="form-group"><input type="text" class="form-control v__input" placeholder="Enter your full name"></div>
+                  <div class="form-group mt-5"><input type="text" class="form-control v__input" placeholder="Enter your email address"></div>
+                  <div class="form-group mt-5"><input type="text" class="form-control v__input" placeholder="Enter your Phone number"></div>
+                  <div class="form-group mt-5 text-center"><button class="btn btn-md bg-brand white-text">Update Profile</button></div>
+                </form>
+              </div>
+              <div class="modal-footer row justify-content-between mx-0">
+                <div class="col-md-4">
+                  <button class="btn btn-light text-white" data-dismiss="modal" aria-label="Close">cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+    </body>
+</html>
