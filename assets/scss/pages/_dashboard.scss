@@ -107,3 +107,24 @@
   max-height: 450px;
   overflow-y: scroll;
 }
+.attached-img{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  .lightbox-img{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .dark-overlay{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    padding-top: 5rem;
+    @include screenSize(ss-phone){
+      padding-top:4rem;
+    }
+  }
+}

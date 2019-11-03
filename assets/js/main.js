@@ -4,34 +4,6 @@ const app = {
     const comments = document.getElementsByClassName('comments');
     const initialComments = document.getElementById('partial_comments')
     const showBtn = document.getElementById('show_more');
-
-    const url = "https://jsonplaceholder.typicode.com/posts/1/comments";
-    const createNode = (el) => {
-      return document.createElement(el);
-    }
-    const appendChild = (parent, el) => {
-      return parent.appendChild(el);
-    }
-    // fetch(url)
-    //   .then(response => response.json())
-    //   .then((res) => {
-        
-    //     //console.log(res)
-    //     return res.map((comment) => {
-    //       let p = createNode()
-    //         img = createNode(img)
-    //         div = createNode(div)
-    //         div.innerHTML = `${comment.name} ${comment.body}`;
-    //         append(div, img);
-    //         append(div, div);
-          
-    //     })
-       
-    //   })
-    //   .catch(err => console.log(err.message) );
-
-
-
     const showCommentsHandler = (ev) => {
       for(let i = 0; i < comments.length; i++){
         if( comments[i].classList.contains('hide') ){
@@ -57,6 +29,36 @@ const app = {
     showBtn.addEventListener('click', scrollComments);
     for(let i = 0; i < viewComments.length; i++){
       viewComments[i].addEventListener('click', showCommentsHandler);
+    }
+  },
+  initImageThumbnail: () => {
+    const lightbox = document.getElementsByClassName('lightbox-img');
+    const imageCounter = document.getElementById('post_image_count');
+    const overlay = document.getElementById('post_overlay');
+
+    const count = lightbox.length - 3;
+    imageCounter.innerText = count;
+
+    if(lightbox.length === 1){
+      overlay.style.display = 'none';
+      for(let i = 0; i <= lightbox.length; i++){
+          lightbox[i].style.cssText =`
+            max-width: 100%;
+            flex: 0 0 100%;
+            max-height: 400px;
+            `;
+      }
+    }
+    else if(lightbox.length <= 3){
+      overlay.style.display = 'none';
+    } else{
+      for(let i = 3; i <= lightbox.length; i++){
+          lightbox[i].style.cssText =`
+            position: absolute;
+            right: 0;
+            bottom:0;
+            `;
+      }
     }
   }
 }
